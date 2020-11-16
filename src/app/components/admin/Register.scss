@@ -1,0 +1,27 @@
+@import '../../_sass/1-abstracts/variables';
+
+.form-register {
+    margin: $gutter 0;
+    width: 100%;
+    text-align: center;
+
+    .form-input {
+        margin-bottom: $gutter/4;
+
+        label {
+            margin-right: $gutter/4;
+        }
+
+        input {
+            padding: $gutter/12 $gutter/14;
+        }
+    }
+
+    .btn {
+        border: 1px solid $primary;
+        background-color: $primary;
+        color: $body-bg;
+
+    }
+
+}

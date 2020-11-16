@@ -1,0 +1,124 @@
+@import '../_sass/1-abstracts/index';
+.side{
+     background-color:$primary;
+     margin:$gutter 0;
+    &-nav {
+        margin: $gutter*1.2 0;
+       
+
+        &_item {
+            list-style-type: none;
+            font-size: 1rem;
+            margin-bottom: $gutter/3;
+            
+            .link{
+                color: $body-bg;
+                margin-left:$gutter;
+                text-decoration: none;
+
+                &:hover{
+                    color:$text-400;
+                }
+            }
+        }
+    }
+    .to-top{
+        border:1px solid $body-bg;
+        border-radius:7px;
+        padding:5px;
+        background-color: $body-bg;
+        position: fixed;
+        top:400px;
+        left:100px;
+
+        .link{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration: none;
+            
+            
+                i {
+                    color: $text-500;
+                    margin-right: 10px;
+
+                }
+                
+        }
+        
+        
+    }
+}
+
+.adminPage{
+    margin:$gutter;
+    .btn-add{
+        color: $body-bg;
+        background-color: #087c08;
+        border: 1ps solid #087c08;
+        border-radius:7px;
+        padding: 10px;
+        
+    }
+    .btn-edit{
+        color: $body-bg;
+        background-color: #1f44c0;
+        border: 1ps solid #1f44c0;
+        border-radius:7px;
+        padding: 10px;
+        text-decoration: none;
+        &:hover {
+            background-color: #18379b;
+        }
+    }
+}
+.admin{
+    .card{
+        margin-bottom: $gutter/2;
+        &-picture {
+            margin-top: $gutter/3;
+
+            &_img {
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+                display: block;
+                margin: 0 auto;
+            }
+
+        }
+    }
+    .admin-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        
+        .btn-delete, .btn-edit{
+            color: $body-bg;
+            padding: 10px;
+            border-radius:7px;
+          
+            
+        }
+        .btn-edit{
+            background-color: #1f44c0;
+            border: 1px solid #1f44c0;
+             margin-right:$gutter;
+             text-decoration: none;
+             &:hover{
+                 background-color: #18379b;
+             }
+             
+        }
+
+      
+        .btn-delete{
+            background-color: #b32c03;
+            border: 1px solid #b32c03;
+             &:hover {
+                 background-color: #7c2004;
+             }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+
+// Body
+$body-bg: #EDEBE9;
+$body-color: #111;
+
+// Typography
+$font-robotto: "Roboto",sans-serif;
+$font-quote: 'Tulpen One',
+cursive;
+
+
+// Grid
+$grid-columns: 12;
+$gutter: 64px;
+
+//colors
+
+$link: #214A3D;
+$primary: #3F2414;
+$secondary: #2C7D53;
+$secondary-400: #3ea871;
+$text-900: #1d1009;
+$text-400: #884d2e;
+$text-500: #613721;
+$active:#9F7C64;
+$text:#BEADA6;
+$hover:#8d7f79;
+$copyright:#5c483a;
+$white-100:#fff;
+$white-200:rgb(221, 219, 219);
+$orange-500:#d76a03;
+$orange-600:#9e4f05;
+
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+.justify-end{
+    justify-content: end;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.align-items{
+    align-items: center;
+}

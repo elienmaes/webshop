@@ -1,0 +1,146 @@
+@import '../../_sass/1-abstracts/index';
+
+.category{
+    margin-top:$gutter;
+    h1{
+        font-size: 2rem;
+        margin-bottom: $gutter/3;
+    }
+    .category-btn-group {
+        button {
+            border: 1px solid $text-400;
+            border-radius:7px;
+            background-color: $text-400;
+            color:$body-bg;
+            margin-right: 10px;
+            padding:5px;
+            &:hover{
+                background-color:$text-500;
+            }
+        }
+    }
+}
+
+.coffee{
+    .card{
+        -webkit-box-shadow: 1px 1px 9px -5px rgba(0, 0, 0, 0.78);
+        box-shadow: 1px 1px 9px -5px rgba(0, 0, 0, 0.78);
+        padding: $gutter/3 0;
+        margin:$gutter 0;
+        position: relative;
+        &:hover{
+            transform: scaleY(1.02);
+        }
+        &-category {
+            border: 1px solid $orange-500;
+            border-radius: 7px;
+            color:$body-bg;
+            background-color: $orange-500;
+            width: 25%;
+            padding: 5px;
+            position: absolute;
+            top:5px;
+            left:5px;
+            font-size: 0.7rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+        &-picture{
+            margin-top:$gutter/3;
+            &_img{
+               width: 200px;
+               height: 200px;
+               object-fit: contain;
+               display:block;
+               margin: 0 auto;
+            }
+            
+        }
+        &-body{           
+            &_quantity,
+            &_brand,
+            &_name,
+            &_flavor,
+            &_intensity,
+            &_price{
+                color: $text-900;
+                margin-top:$gutter/5;
+            }
+            &_line{
+                border-bottom: 1px solid $text-900;
+                margin: $gutter/3 0;
+            }
+            &_brand{
+                span{
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                }
+            }        
+            &_flavor{
+                span{
+                     text-transform: lowercase;
+                }
+                margin-bottom:$gutter/3;
+            }
+           &_name{
+               font-weight: 600;
+               font-size:1.6rem;
+               text-align:center
+           }
+            &_intensity{
+                img{
+                    width:10%;
+                    margin-left:5px;
+                }
+            }
+            &_price{
+                color:$text-400;
+                font-weight: 700;
+                font-size:2rem;
+                margin-top:$gutter/3;
+            }
+            &_stock,
+            .fa-check-circle {
+                color:$secondary;
+                margin-top:$gutter/3;
+                padding-bottom:$gutter/6;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .button-group{
+               display:flex;
+               justify-content: space-between;
+               align-items: center;
+                    .btn{
+                        &-order,&-detail{
+                            border:1px solid $text-400;
+                            border-radius:5px;
+                            margin-top:$gutter/3;
+                            width:25%;
+                            text-decoration: none;
+                            text-align:center;
+                            padding:5px;
+                        }
+                        &-order{
+                            color:$body-bg;
+                            background-color: $text-400;
+                            
+                            &:hover {
+                                border: 1px solid $text-500;
+                                background-color: $text-500;
+                            }
+                        }
+                        &-detail{
+                            color:$text-400;
+                                &:hover{
+                                    color:$body-bg;
+                                    background-color: $text-500;
+                                }
+                        }
+                         
+                    }
+            }
+        }
+    }
+}

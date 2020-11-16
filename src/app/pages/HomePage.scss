@@ -1,0 +1,56 @@
+@import '../_sass/1-abstracts/index';
+
+.homepage{
+    margin: $gutter 0;
+    img{
+        max-width: 100%;
+        height:auto;
+        margin-left:-15px;
+    }
+
+    &-content{
+        margin-top:$gutter*1.5;
+         .quote {
+             background-color: $active;
+             padding: 15px 10px;
+             border-radius: 7px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             margin-bottom:$gutter;
+             q {
+                 font-family: $font-quote;
+                 font-size: 3rem;
+                 letter-spacing: 0.5rem;
+                 margin-bottom:10px;
+             }
+         }
+         .content-section{
+             width:90%;
+             margin-bottom:$gutter;
+             color:$text-500;
+             h1{
+                 margin-bottom:$gutter/3;
+             }
+             p,li{
+                 color:$text-900;
+                 line-height: 1.75rem;
+             }
+             li{
+                 list-style-type: none;
+                 line-height: 2rem;
+             }
+            li:before{
+                content:'';
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                background-image: url(../assets/images/beans.png);
+                background-repeat: no-repeat;
+                background-size:15px ;
+                margin-right:10px;
+                
+            }
+         }
+    }
+}

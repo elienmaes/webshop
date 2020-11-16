@@ -1,0 +1,89 @@
+@import '../../_sass/1-abstracts/index';
+
+.app-header {
+    background-color: $primary;
+    .logo{
+        height: 70px;
+        background-color:$body-bg;
+        border-radius: 5px;
+        padding:10px;
+    }
+    .navbar {
+        height: $gutter*1.5;
+
+        &-brand {
+            color: $body-bg;
+        }
+
+        &-items {
+            display: flex;
+            list-style: none;
+            margin-bottom: 0;
+
+            .nav-item {
+                margin-right:$gutter;
+                
+                .nav-link {
+                    color: $body-bg;
+                    font-size: 1.2rem;
+
+                    &:active {
+                        color: $active;
+                    }
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+
+        }
+
+        .form-inline {
+            ::placeholder {
+                color: $primary;
+            }
+
+            .btn {
+                background-color: $body-bg;
+                margin-left: $gutter/4;
+            }
+        }
+
+        .shoppingCart {
+            margin-right: $gutter;
+            i {
+                color: $body-bg;
+            }
+
+        }
+    }
+}
+
+
+
+// @media only screen and (max-width: 600px){
+//     .navbar{
+//         &-nav{
+//             text-align:center;
+//             margin-top:2rem;
+//             .nav-item{
+//                 margin-right:0;
+
+//             }
+//         }
+//         .form-inline{
+//             display:flex;
+//             flex-wrap: wrap;
+//             .form-control{
+//                 width:75%;
+//             }
+
+//         }
+//         button{
+//             margin-left:1.5rem;
+//         }
+//         .shopping{
+//             margin-left:6rem;
+//         }
+//     }
+// }

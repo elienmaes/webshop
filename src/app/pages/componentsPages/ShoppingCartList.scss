@@ -1,0 +1,53 @@
+@import '../../_sass/1-abstracts/index';
+
+.shoppingcart{
+    margin:$gutter*2 0;
+    &-line{
+        border-bottom: 1px solid $text-400;
+        margin:$gutter 0;
+    }
+    .label{
+        font-size: 1.5rem;
+        margin:$gutter/5 0;
+        
+    }
+    .product-wrapper{
+        margin-bottom: $gutter;
+        .product {
+            &-image {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        display: block;
+
+    }
+}
+    .quantity-input{
+        width: 25%;
+        margin:0 10px;
+        padding:7px;
+        border-radius:5px;
+    }
+    .plus-btn, .min-btn{
+        padding:7px;
+        border-radius:5px;
+    }
+    }
+    .end, .shopping{
+        border:1px solid $text-400;
+        border-radius:7px;
+        background-color: $text-400;
+        color:$body-bg;
+        padding:7px;
+        margin: $gutter/3 $gutter/4;
+        
+    }
+    .shopping{
+        background-color: $body-bg;
+        color:$text-400;
+    }
+    .actions{
+        display: flex;
+       justify-content: center;
+    }
+}

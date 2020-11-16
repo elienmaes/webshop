@@ -1,0 +1,17 @@
+@import '../../_sass/1-abstracts/variables';
+
+.courtesy-navigation {
+    .nav-item{
+        .nav-link{
+            color:$text;
+            margin-right: $gutter/4;
+            border:1px solid $text;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .admin{
+            background-color: $body-bg;
+            color:$text-500;
+        }
+    }
+}

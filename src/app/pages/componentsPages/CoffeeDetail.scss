@@ -1,0 +1,90 @@
+@import '../../_sass/1-abstracts/index';
+
+
+.detailpage {
+
+    margin: $gutter auto;
+
+    .detail {
+        &-picture {
+
+            &_img {
+                width: 500px;
+                height: 500px;
+                object-fit: contain;
+                display: block;
+            }
+
+        }
+
+        &-body {
+            margin-left: $gutter/2;
+            color: $text-900;
+
+            .title,
+            .price {
+                font-weight: 700;
+                margin-bottom: $gutter/3;
+            }
+
+            .price {
+                color: $text-400;
+            }
+
+            .brand {
+                margin-bottom: $gutter/3;
+                span {
+                    font-weight: 700;
+                }
+            }
+            .like{
+                display:flex;
+                margin-bottom: $gutter/5;
+                
+                i{
+                    color:$orange-500;
+                    margin-right: 10px;
+                    
+                }
+                p{
+                    color:$orange-500;
+                    margin-bottom:0;
+                }
+                 .fa-heart:hover {
+                     transform: scale(1.25, 1.25);
+                 }
+            }
+            .flavor{
+                text-transform: lowercase;
+            }
+            .intensity {
+                img {
+                    width: 8%;
+                    margin-left: 5px;
+                }
+            }
+            .description {
+                line-height: 1.5rem;
+                margin-bottom: $gutter/2;
+            }
+
+            .btn-order {
+                border: 1px solid $text-400;
+                border-radius: 5px;
+                margin-top: $gutter/3;
+                width: 25%;
+                text-decoration: none;
+                text-align: center;
+                color: $body-bg;
+                background-color: $text-400;
+                padding: 10px;
+
+                &:hover {
+                    border: 1px solid $text-500;
+                    background-color: $text-500;
+                }
+            }
+           
+        }
+    }
+}

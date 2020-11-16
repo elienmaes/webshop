@@ -1,0 +1,53 @@
+@import '../../_sass/1-abstracts/variables';
+// @import '../../_sass/2-vendor/bootstrap';
+
+.app-footer {
+    background: $primary;
+    padding: $gutter/2 0;
+
+    .nav {
+        &-title {
+            font-size: 2rem;
+            color: $text;
+            padding-left: 1rem;
+        }
+        &-info{
+           color: $text;
+           padding-left: 1rem;
+           a{
+               color:$text;
+           }
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+            color:$text;
+            :hover{
+                color:$body-bg
+            }
+        }
+        :hover{
+            color:$body-bg;
+        }
+        
+    }
+
+    .copyright {
+        color: $copyright;
+        text-align: center;
+        margin-top:$gutter/3;
+
+    }
+    .fa-phone-alt, .fa-envelope{
+        color:$text;
+        margin-bottom:1rem;
+        padding-left: 1rem;
+    }
+}
+
+// @media only screen and (max-width: 600px){
+//     .fa-2x {
+//         font-size: 1.5em;
+//     }
+// }
